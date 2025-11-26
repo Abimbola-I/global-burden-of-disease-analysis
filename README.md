@@ -244,46 +244,33 @@ Males consistently showed a higher mortality burden across all years, mirroring 
 ### 4. Age Group Mortality Patterns
 
 Highest-mortality groups:
- _80+ years — 15.91%._
- _75–79 years — 8.67%._
- _70–74 years — 8.66%._
+- _80+ years — 15.91%._
+- _75–79 years — 8.67%._
+- _70–74 years — 8.66%._
 
 These reflect the natural rise in mortality among older populations.
 
--Lowest-mortality groups:_
-
-_10–14 years — 0.95%_
-5–9 years — 1.45%
-15–19 years — 1.51%
+Lowest-mortality groups:
+- _10–14 years — 0.95%._
+- _5–9 years — 1.45%._
+- _15–19 years — 1.51%._
 
 This mirrors global patterns where childhood and teenage mortality tends to be low due to stronger immunity and fewer chronic disease risks.
 
-🔹 Country-Level Trends
+### 5. Country-Level Trends
 
-Geospatial mapping revealed clear differences in mortality across regions, with high-population countries contributing much larger portions of global deaths.
+_Geospatial mapping revealed clear differences in mortality across regions, with high-population countries contributing much larger portions of global deaths._
 
-🔹 Death Rate per 100,000 (Mortality Risk)
+### 6. Death Rate per 100,000 (Mortality Risk)
 
-This metric measures the risk of dying, not the total number of deaths.
-
-A key insight from the analysis:
-
-Death rate per 100,000 declined in later years even though total deaths increased.
+Death rate per 100,000 declined in later years even though total deaths increased, that is people became less likely to die evn though more people existed globally.
 
 This pattern generally indicates:
+- _Improved access to healthcare_
+- _Better disease prevention and treatment_
+- _Faster population growth than mortality growth_
 
-Improved access to healthcare
-
-Better disease prevention and treatment
-
-Higher life expectancy
-
-Faster population growth than mortality growth
-
-Meaning:
-People became less likely to die, even though more people existed globally.
-
-Trends Over Time
+### 7. Trends Over Time
 
 Total deaths increased over the years (population growth effect).
 
