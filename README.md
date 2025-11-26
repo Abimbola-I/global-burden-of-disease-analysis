@@ -43,7 +43,7 @@ Source: LinkedIn public dataset
 
 Columns Included
 | Column                 | Description                                   | Type        |
-| ---------------------- | --------------------------------------------- | ----------- |
+| :--------------------- | :-------------------------------------------- | :---------- |
 | Country Code           | Name of country                               | Categorical |
 | Country Name           | Three–letter code                             | Categorical |
 | Year                   | Observation year                              | Numeric     |
@@ -59,6 +59,165 @@ The data preparation phase involved a thorough ETL process, starting with cleani
 
 For the data modeling, a star schema was implemented, with the dimension tables connecting to a central fact table, Global Mortality Fact. This structure provided an efficient and organized framework for analytical queries.
 
-A suite of DAX measures was created to support the analysis. These included overall metrics such as Total Deaths, Total Male Deaths, Total Female Deaths, as well as relative metrics like % Male Deaths and % Female Deaths. Analytical measures such as Rank by Total Deaths, Top N Countries, and Death Rate Insights were also developed. Additional measures focused on comparing male-to-female mortality ratios, providing a comprehensive toolkit for exploring population-level mortality trends.
+In this project, more than 20 custom DAX measures were created to drive all analytics, rankings, demographic insights, and time-trend evaluations. These measures cover core aggregations (such as Total Deaths, Total Male/Female Deaths), percentage distributions (e.g., % of Total Deaths, % Male/Female Deaths), advanced ranking using RANKX (e.g., Rank Total Country by Deaths, Rank Age Group by Death Rate), and parameter-driven logic (Top/Bottom toggles and dynamic Top-N analysis). Together, these DAX measures form the analytical backbone of this mortality report, enabling dynamic filtering, interactive exploration, and insightful comparisons across countries, genders, years, and age groups.
+
+
+
+### Examples of Core Measures Used
+
+```DAX
+
+Total Deaths = SUM(Global_Fact[Number of Deaths])
+
+
+Total Male Deaths = 
+CALCULATE(
+    [Total Deaths],
+    FILTER(Sex_Dim, Sex_Dim[Sex] = "Male")
+)
+
+
+Total Female Deaths = 
+CALCULATE(
+    [Total Deaths], 
+    FILTER(Sex_Dim[Sex] = "Female")
+)
+
+
+Total Deaths Rate Per 100,000 = SUM(Global_Fact[Death Rate Per 100,000])
+
+```
+
+### Examples of Percentage Measures
+
+```DAX
+
+% Of Total Deaths =
+VAR _TotalDeathsAllAgeGroup = 
+    CALCULATE(
+        [Total Deaths],
+        ALL('Age _Dim'[Age Group]))
+
+RETURN
+DIVIDE(
+    [Total Deaths],
+     _TotalDeathsAllAgeGroup
+    
+    )
+
+
+% Of Male Deaths =
+DIVIDE(
+    CALCULATE([Total Deaths], Sex_Dim[Sex] = "Male"),
+    CALCULATE([Total Deaths])
+)
+
+
+% Of Female Deaths =
+DIVIDE(
+    CALCULATE([Total Deaths], Sex_Dim[Sex] = "Female"),
+    CALCULATE([Total Deaths])
+)
+
+```
+
+### Examples of Ranking Measures
+
+```DAX
+
+Rank Total Country by Total Deaths = 
+               VAR _topdeathspercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths], ,DESC)))
+
+                VAR _bottomdeathspercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths], ,ASC)))
+
+
+                VAR _ranking = 
+                    IF(SELECTEDVALUE('Top & bottom'[Value]) = "Top",_topdeathspercountry,
+                    _bottomdeathspercountry)
+
+
+                RETURN IF(_ranking <= 'Top N Parameter'[Top N Parameter Value],[Total Deaths]) 
+
+
+Rank Total Country by Death Rate Per 100,000 = 
+                VAR _topdeathratepercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths Rate Per 100,000], ,DESC)))
+
+                VAR _bottomdeathratepercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths Rate Per 100,000], ,ASC)))
+
+
+                VAR _ranking = 
+                    IF(SELECTEDVALUE('Top & bottom'[Value]) = "Top",_topdeathratepercountry,
+                    _bottomdeathratepercountry)
+
+
+                RETURN IF(_ranking <= 'Top N Parameter'[Top N Parameter Value],[Total Deaths Rate Per 100,000]) 
+
+
+Rank Gender by Total Deaths = 
+               VAR _topdeathsbygender = 
+                    IF(ISINSCOPE(Sex_Dim[Sex ID]),
+                    (RANKX(ALL(Sex_Dim[Sex ID]),[Total Deaths], ,DESC)))
+
+                VAR _bottomdeathsbygender = 
+                    IF(ISINSCOPE(Sex_Dim[Sex ID]),
+                    (RANKX(ALL(Sex_Dim[Sex ID]),[Total Deaths], ,ASC)))
+
+
+                VAR _ranking = 
+                    IF(SELECTEDVALUE('Top & bottom'[Value]) = "Top",_topdeathsbygender,
+                    _bottomdeathsbygender)
+
+
+                RETURN IF(_ranking <= 'Top N Parameter'[Top N Parameter Value],[Total Deaths]) 
+
+Rank Total Country by Death Rate Per 100,000 = 
+                VAR _topdeathratepercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths Rate Per 100,000], ,DESC)))
+
+                VAR _bottomdeathratepercountry = 
+                    IF(ISINSCOPE(Country_Dim[Country Name]),
+                    (RANKX(ALL(Country_Dim[Country Name]),[Total Deaths Rate Per 100,000], ,ASC)))
+
+
+                VAR _ranking = 
+                    IF(SELECTEDVALUE('Top & bottom'[Value]) = "Top",_topdeathratepercountry,
+                    _bottomdeathratepercountry)
+
+
+                RETURN IF(_ranking <= 'Top N Parameter'[Top N Parameter Value],[Total Deaths Rate Per 100,000]) 
+
+```
+
+### Examples of Extreme Value Measures
+
+```DAX
+
+Highest Number of Deaths = 
+MAXX(
+   VALUES(Global_Fact[Country ID]),
+   [Total Deaths]
+)
+
+Country_With_Max_Deaths = 
+VAR _max = [Highest Number of Deaths]
+RETURN
+CALCULATE(
+    SELECTEDVALUE(Country_Dim[Country Name]),
+    FILTER(
+        VALUES(Country_Dim[Country Name]),
+        [Total Deaths] = _max
+    )
+)
+
+```
 
 
