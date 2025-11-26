@@ -1,6 +1,6 @@
 # Global Disease Burden Analysis
 
-![front-view-covid19-concept-school](https://github.com/user-attachments/assets/0c04e354-b52e-4af4-9107-2ea5347d06fd)
+![front-view-covid19-concept-school](https://github.com/user-attachments/assets/602d82a5-6533-4364-9705-ec6dcb73296c)
 
 
 ## Project Overview
@@ -221,3 +221,72 @@ CALCULATE(
 ```
 
 
+## Analysis & Key Insights
+
+### 1. Total Global Mortality
+
+_Across the five reporting years (1970, 1980, 1990, 2000, 2010), the dataset recorded 237 million total deaths globally._
+
+### 2. Highest & Lowest Burden Countries
+
+- _India accounted for the highest share of global deaths (≈37.5%)._
+- _Marshall Islands recorded the lowest share of global deaths (≈9.65%)._
+
+This contrast highlights the wide differences in population size and health outcomes across countries.
+
+### 3. Gender Insights
+
+- _Male deaths: 53.94%._
+- _Female deaths: 46.06%._
+
+Males consistently showed a higher mortality burden across all years, mirroring global patterns where men often face higher risks due to biological, behavioral, and occupational factors.
+
+### 4. Age Group Mortality Patterns
+
+Highest-mortality groups:
+ _80+ years — 15.91%._
+ _75–79 years — 8.67%._
+ _70–74 years — 8.66%._
+
+These reflect the natural rise in mortality among older populations.
+
+-Lowest-mortality groups:_
+
+_10–14 years — 0.95%_
+5–9 years — 1.45%
+15–19 years — 1.51%
+
+This mirrors global patterns where childhood and teenage mortality tends to be low due to stronger immunity and fewer chronic disease risks.
+
+🔹 Country-Level Trends
+
+Geospatial mapping revealed clear differences in mortality across regions, with high-population countries contributing much larger portions of global deaths.
+
+🔹 Death Rate per 100,000 (Mortality Risk)
+
+This metric measures the risk of dying, not the total number of deaths.
+
+A key insight from the analysis:
+
+Death rate per 100,000 declined in later years even though total deaths increased.
+
+This pattern generally indicates:
+
+Improved access to healthcare
+
+Better disease prevention and treatment
+
+Higher life expectancy
+
+Faster population growth than mortality growth
+
+Meaning:
+People became less likely to die, even though more people existed globally.
+
+Trends Over Time
+
+Total deaths increased over the years (population growth effect).
+
+Death rate per 100k decreased, reflecting improvements in global health and survival.
+
+These opposing trends together provide a more realistic view of global mortality patterns.
