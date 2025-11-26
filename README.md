@@ -1,6 +1,8 @@
 # Global Disease Burden Analysis
 
-![front-view-covid19-concept-school](https://github.com/user-attachments/assets/602d82a5-6533-4364-9705-ec6dcb73296c)
+
+<img width="3749" height="2499" alt="front-view-covid19-concept-school" src="https://github.com/user-attachments/assets/c4b17826-4891-40fa-ae0e-6fc2cc3f6a44" />
+
 
 
 ## Project Overview
@@ -227,21 +229,48 @@ CALCULATE(
 
 _Across the five reporting years (1970, 1980, 1990, 2000, 2010), the dataset recorded 237 million total deaths globally._
 
-### 2. Highest & Lowest Burden Countries
+
+![Screenshot (228) (1)](https://github.com/user-attachments/assets/ce48d1cc-9797-45b4-a4ae-766beb1f9079)
+
+
+### 2. Death Rate per 100,000 (Mortality Risk)
+
+Death rate per 100,000 declined in later years even though total deaths increased, that is people became less likely to die even though more people existed globally.
+
+This pattern generally indicates:
+- _Improved access to healthcare_
+- _Better disease prevention and treatment_
+- _Faster population growth than mortality growth_
+
+
+### 3. Highest & Lowest Burden Countries
 
 - _India accounted for the highest share of global deaths (≈37.5%)._
 - _Marshall Islands recorded the lowest share of global deaths (≈9.65%)._
 
 This contrast highlights the wide differences in population size and health outcomes across countries.
 
-### 3. Gender Insights
+
+![Screenshot (227)](https://github.com/user-attachments/assets/5e9803ea-8c23-4c48-9183-4359e93ed2d0)
+
+
+### 4. Country-Level Trends
+
+_Geospatial mapping revealed clear differences in mortality across regions, with high-population countries contributing much larger portions of global deaths._
+
+
+### 5. Gender Insights
 
 - _Male deaths: 53.94%._
 - _Female deaths: 46.06%._
 
 Males consistently showed a higher mortality burden across all years, mirroring global patterns where men often face higher risks due to biological, behavioral, and occupational factors.
 
-### 4. Age Group Mortality Patterns
+
+![Screenshot (226)](https://github.com/user-attachments/assets/cac72df7-2619-475f-8144-8680426dc9ca)
+
+
+### 6. Age Group Mortality Patterns
 
 Highest-mortality groups:
 - _80+ years — 15.91%._
@@ -257,23 +286,50 @@ Lowest-mortality groups:
 
 This mirrors global patterns where childhood and teenage mortality tends to be low due to stronger immunity and fewer chronic disease risks.
 
-### 5. Country-Level Trends
-
-_Geospatial mapping revealed clear differences in mortality across regions, with high-population countries contributing much larger portions of global deaths._
-
-### 6. Death Rate per 100,000 (Mortality Risk)
-
-Death rate per 100,000 declined in later years even though total deaths increased, that is people became less likely to die evn though more people existed globally.
-
-This pattern generally indicates:
-- _Improved access to healthcare_
-- _Better disease prevention and treatment_
-- _Faster population growth than mortality growth_
 
 ### 7. Trends Over Time
 
-Total deaths increased over the years (population growth effect).
-
-Death rate per 100k decreased, reflecting improvements in global health and survival.
-
+Total deaths increased over the years (population growth effect) while the death rate per 100k decreased, reflecting improvements in global health and survival.
 These opposing trends together provide a more realistic view of global mortality patterns.
+
+
+![Screenshot (225)](https://github.com/user-attachments/assets/917c77b5-b684-4328-b77e-fba653748d8d)
+
+
+## Report Pages (Power BI)
+
+This report contains a landing page with other pages such as :
+
+### 1. Overview
+
+- Total deaths.
+- Total Death Rate Per 100,000.
+- Total countries.
+- Male vs Female breakdown
+- Age group highlights
+
+Total death trend
+
+2️⃣ Countries
+
+Top & bottom N countries
+
+Country filter parameter
+
+Country-level gender distribution
+
+Country total deaths & death rates
+
+3️⃣ Demography
+
+Age group mortality analysis
+
+% Male vs % Female deaths by age
+
+Stacked bar distribution
+
+4️⃣ Yearly Trends
+
+Top 5 countries by death rate per year
+
+Trend of deaths & death rate per 100k
