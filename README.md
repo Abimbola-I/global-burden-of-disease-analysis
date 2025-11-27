@@ -1,7 +1,6 @@
 # Global Disease Burden Analysis
 
 
-<img width="3749" height="2499" alt="front-view-covid19-concept-school" src="https://github.com/user-attachments/assets/c4b17826-4891-40fa-ae0e-6fc2cc3f6a44" />
 
 
 
@@ -296,40 +295,107 @@ These opposing trends together provide a more realistic view of global mortality
 ![Screenshot (225)](https://github.com/user-attachments/assets/917c77b5-b684-4328-b77e-fba653748d8d)
 
 
-## Report Pages (Power BI)
+## Report Pages 
 
-This report contains a landing page with other pages such as :
+The analysis was built in Power BI, starting with a custom-designed landing page that guides users into various analytical sections. The report also includes dynamic parameters to switch between metrics and control ranking outputs across countries, years, age groups, and sexes.
 
 ### 1. Overview
 
 - Total deaths.
-- Total Death Rate Per 100,000.
+- Death Rate Per 100,000.
 - Total countries.
-- Male vs Female breakdown
-- Age group highlights
+- Percentage of Total Deaths and Total Deaths by Country
+- Total Deaths by Gender
+- Percentage of Total Deaths and Total Deaths by Age group 
+- Total Deaths and Death Rate by Year
 
-Total death trend
+### 2️. Geographical Insights
 
-2️⃣ Countries
+- Top & bottom N countries
+- Country filter parameter
+- Top 5 Countries by Total Deaths
+- Percentage of Male Deaths within top 5 countries and global percentage of male deaths from that country
 
-Top & bottom N countries
+### 3️. Demographic Breakdown
 
-Country filter parameter
+- Percentage of Male vs Female Deaths 
+- Percentage of Male and Female Deaths by Age group
+- Percentage of Total Deaths Age group
+- Total Deaths by Sex
 
-Country-level gender distribution
+### 4️. Mortality Trends Over Time
+- Top 5 countries by death rate per year (1970,1980,1990,2000,2010)
+- Trend of Death rate per 100k and Total Deaths
 
-Country total deaths & death rates
 
-3️⃣ Demography
+## Tools Used
 
-Age group mortality analysis
+- Power BI Desktop
+- Power Query (M)
+- DAX
+- Excel (initial review)
+- GitHub for documentation
 
-% Male vs % Female deaths by age
+ 
+ ## Key Challenges
 
-Stacked bar distribution
+- No access to Power BI Service (work/school account required)
 
-4️⃣ Yearly Trends
+- Map visuals failing when signed in
 
-Top 5 countries by death rate per year
+- Limited dataset restricts specific disease-level insights
 
-Trend of deaths & death rate per 100k
+- Export-to-PDF formatting distortion
+
+- No direct cause-of-death data in dataset (only totals)
+
+
+## Limitations
+
+- Dataset does not specify disease type (malaria, TB, cancer, etc.)
+
+- Only five observation years available
+
+- Death rate values may reflect population structure changes
+
+- No socioeconomic determinants (income, education, region)
+
+
+## Recommendations
+
+- Countries with higher mortality rates should implement stronger health policies
+
+- Global health agencies should target high-risk age groups
+
+- Additional datasets should be incorporated for cause-specific mortality
+
+- Time series models would be possible with continuous yearly data
+
+
+## How to View This Project
+
+Download the Report
+
+PDF version: (you will upload this to GitHub)
+
+PBIX version: (optional—upload to GitHub repo)
+
+
+## Conclusion
+
+This analysis highlights broad global mortality patterns across countries, sexes, and age groups over a 5 year period.
+Despite limitations, the project demonstrates strong Power BI skills in:
+
+- Data Cleaning
+- Data modeling
+- DAX
+- Analytics storytelling
+- Report design
+- Insight communication
+
+
+## About the Analyst
+
+I am a data analyst passionate about healthcare analytics, digital health and public health by leveraging data driven insights to create impact and provide long-term solutions visualization, and insight-driven reporting. My goal is to use data to support evidence-based decision-making in public health.
+
+### You can connect with me on LinkedIn 
