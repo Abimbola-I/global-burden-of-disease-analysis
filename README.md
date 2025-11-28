@@ -3,7 +3,6 @@
 
 
 
-
 ## Project Overview
 
 The health and productivity of any community — and ultimately entire nations — depend heavily on the stability of their population’s wellbeing. When health declines, so does social and economic progress. Understanding patterns of mortality is therefore crucial for guiding policy, resource allocation, and long-term development.
@@ -324,6 +323,7 @@ The analysis was built in Power BI, starting with a custom-designed landing page
 - Total Deaths by Sex
 
 ### 4️. Mortality Trends Over Time
+
 - Top 5 countries by death rate per year (1970,1980,1990,2000,2010)
 - Trend of Death rate per 100k and Total Deaths
 
@@ -337,39 +337,28 @@ The analysis was built in Power BI, starting with a custom-designed landing page
 - GitHub for documentation
 
  
- ## Key Challenges
+ ## Challenges & Limitations
 
-- No access to Power BI Service (work/school account required)
-
-- Map visuals failing when signed in
-
-- Limited dataset restricts specific disease-level insights
-
-- Export-to-PDF formatting distortion
-
-- No direct cause-of-death data in dataset (only totals)
-
-
-## Limitations
-
-- Dataset does not specify disease type (malaria, TB, cancer, etc.)
-
-- Only five observation years available
-
-- Death rate values may reflect population structure changes
-
-- No socioeconomic determinants (income, education, region)
+- **Limited dataset scope**: dataset contains only five isolated years (1970, 1980, 1990, 2000, 2010), restricting long-term trend modelling.
+- **No cause-of-death detail**: the dataset reports only total deaths, preventing disease-specific insights.
+- **No information on healthcare access, socioeconomic status, or policy changes**: this limits deeper interpretation of why mortality patterns changed.
+- **Age-group and sex breakdown only**: absence of additional demographic features restricts richer segmentation.
 
 
 ## Recommendations
 
-- Countries with higher mortality rates should implement stronger health policies
+1. **Strengthen Health Policies in High-Burden Countries**
 
-- Global health agencies should target high-risk age groups
+Countries with consistently high mortality levels, particularly India, Nigeria, China, and the United States, should intensify national health policies that address the systemic drivers of mortality. This includes expanding access to essential healthcare services, improving emergency response capacity, and increasing investments in preventive care.
 
-- Additional datasets should be incorporated for cause-specific mortality
+2. **Prioritize Early Interventions for High-Risk Age Groups**
+Mortality is most concentrated among adults aged 70–80+ years, highlighting the need for broader access to geriatric care, routine screenings for chronic diseases, improved management of age-related conditions, and community-level support systems for ageing populations. Addressing the health needs of these high-risk groups can meaningfully reduce the overall national mortality burden.
 
-- Time series models would be possible with continuous yearly data
+3. **Improve Youth & Adolescent Health Programs**
+Although deaths among younger age groups (5–19 years) are relatively low, youth populations remain highly vulnerable to nutritional deficits, infectious diseases, road accidents, environmental hazards, and limited access to preventive healthcare. Strengthening health programs for children and adolescents can help reduce avoidable deaths and promote healthier adult populations in the future.
+
+4. **Increase Investments in Healthcare Infrastructure**
+While the available data did not provide specific information on existing healthcare infrastructure, countries with high mortality could benefit from investments in primary healthcare facilities, developing a skilled healthcare workforce, and establishing disease surveillance and early detection systems. Where such infrastructure is lacking or underdeveloped, prioritizing these areas can support better health outcomes and contribute to a reduction in mortality over time.
 
 
 ## How to View This Project
