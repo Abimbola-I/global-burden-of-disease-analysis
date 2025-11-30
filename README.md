@@ -34,12 +34,12 @@ This project also contributes to my portfolio as a healthcare data analyst, prov
 
 ## Dataset Description
 
-Dataset name: Global Burden of Disease Dataset
-Time span: 1970 · 1980 · 1990 · 2000 · 2010
-Countries: 187
-Columns: 7
-Rows: 58,906
-Source: LinkedIn public dataset
+- Dataset name: Global Burden of Disease Dataset
+- Time span: 1970 · 1980 · 1990 · 2000 · 2010
+- Countries: 187
+- Columns: 7
+- Rows: 58,906
+- Source: LinkedIn public dataset
 
 Columns Included
 | Column                 | Description                                   | Type        |
