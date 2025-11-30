@@ -368,7 +368,8 @@ While the available data did not provide specific information on existing health
 
 You can view this project by downloading any of the available files below:
 
-- PDF Version: Download the PDF report using the link provided.
+- PDF Version: [Global Burden Of Diseases Report(1).pdf](https://github.com/user-attachments/files/23839612/Global.Burden.Of.Diseases.Report.1.pdf)
+
 
 - PBIX Version: (Optional) Download the PBIX file if you want to explore the visuals directly in Power BI.
 
