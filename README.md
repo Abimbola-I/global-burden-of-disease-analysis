@@ -347,27 +347,30 @@ The analysis was built in Power BI, starting with a custom-designed landing page
 
 ## Recommendations
 
-1. **Strengthen Health Policies in High-Burden Countries**
+1. **Strengthen Health Policies in High-Burden Countries.**
 
 Countries with consistently high mortality levels, particularly India, Nigeria, China, and the United States, should intensify national health policies that address the systemic drivers of mortality. This includes expanding access to essential healthcare services, improving emergency response capacity, and increasing investments in preventive care.
 
-2. **Prioritize Early Interventions for High-Risk Age Groups**
+2. **Prioritize Early Interventions for High-Risk Age Groups.**
+
 Mortality is most concentrated among adults aged 70–80+ years, highlighting the need for broader access to geriatric care, routine screenings for chronic diseases, improved management of age-related conditions, and community-level support systems for ageing populations. Addressing the health needs of these high-risk groups can meaningfully reduce the overall national mortality burden.
 
-3. **Improve Youth & Adolescent Health Programs**
+3. **Improve Youth & Adolescent Health Programs.**
+
 Although deaths among younger age groups (5–19 years) are relatively low, youth populations remain highly vulnerable to nutritional deficits, infectious diseases, road accidents, environmental hazards, and limited access to preventive healthcare. Strengthening health programs for children and adolescents can help reduce avoidable deaths and promote healthier adult populations in the future.
 
-4. **Increase Investments in Healthcare Infrastructure**
+4. **Increase Investments in Healthcare Infrastructure.**
+
 While the available data did not provide specific information on existing healthcare infrastructure, countries with high mortality could benefit from investments in primary healthcare facilities, developing a skilled healthcare workforce, and establishing disease surveillance and early detection systems. Where such infrastructure is lacking or underdeveloped, prioritizing these areas can support better health outcomes and contribute to a reduction in mortality over time.
 
 
 ## How to View This Project
 
-Download the Report
+You can view this project by downloading any of the available files below:
 
-PDF version: (you will upload this to GitHub)
+- PDF Version: Download the PDF report using the link provided.
 
-PBIX version: (optional—upload to GitHub repo)
+- PBIX Version: (Optional) Download the PBIX file if you want to explore the visuals directly in Power BI.
 
 
 ## Conclusion
@@ -378,13 +381,13 @@ Despite limitations, the project demonstrates strong Power BI skills in:
 - Data Cleaning
 - Data modeling
 - DAX
-- Analytics storytelling
+- Data storytelling
 - Report design
 - Insight communication
 
 
 ## About the Analyst
 
-I am a data analyst passionate about healthcare analytics, digital health and public health by leveraging data driven insights to create impact and provide long-term solutions visualization, and insight-driven reporting. My goal is to use data to support evidence-based decision-making in public health.
+I leverage data to create impactful solutions that support sustainable growth. I am particularly passionate about driving progressive results in healthcare, especially within public health, and I also have a strong interest in digital health.
 
-### You can connect with me on LinkedIn 
+### You can connect with me on LinkedIn : linkedin.com/in/rukayat-olanrewajuabimbola
